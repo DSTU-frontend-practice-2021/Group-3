@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 1180px;
+    height: 480px;
+}
+.planet-card{
+    box-sizing: border-box;
+    width: 1180px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.planet-wrapper{
+    width: 448px;
+    height: 448px;
+    background: #231f20;
+    border-radius: 10px;
+    margin-left: 14px;
+    margin-top: 17px;
+    display: flex;
+    position: relative;
+}
+
+.planet{
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    background: #1b75bb;
+    margin: auto;
+    /*box-shadow: inset -18px -35px 0px -12px rgba(0, 0, 0, 0.5), inset -35px -75px 0px -15px rgba(0, 0, 0, 0.3);*/ 
+    overflow: hidden;
+    position: relative;
+}
+
+.star{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.small-star{
+    width: 5px;
+    height: 5px;
+}
+
+.medium-star{
+    width: 10px;
+    height: 10px;
+}
+
+.big-star{
+    width: 15px;
+    height: 15px;
+}
+
+.star1{
+    left: 100px;
+    top: 400px;
+}
+
+.star2{
+    top:150px;
+    left: 80px;
+}
+
+.star3{
+    left: 400px;
+    top: 200px;
+}
+
+.star4{
+    left: 320px;    
+    top: 400px;
+}
+
+.star5{
+    left: 350px;
+    top: 130px;
+}
+
+.star6{
+    top: 100px;
+    left: 100px;
+}
+
+.green-line{
+    position: absolute;
+    height: 17px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #00a551;
+}
+
+.white-line{
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #e6e7e8;
+}
+
+.line1{
+    left: -23px;
+    top: -5px;
+}
+
+.line2{
+    top: 10px;
+}
+
+.green-line.line-concavity{
+    background-color: #1b75bb;
+}
+
+.white-line.line-concavity{
+    background-color: #1b75bb;
+}
+
+.line-concavity.line3{
+    top: 10px;
+    left: 55px;
+}
+
+.line4{
+    top: 25px;
+    left: -15px;
+}
+
+.line5{
+    height: 25px;
+    top: 40px;
+}
+
+.line-concavity.line6{
+    height: 20px;
+    top: 45px;
+    left: -80px;
+}
+
+.line-concavity.line7{
+    height: 25px;
+    top: 40px;
+    left: 60px;
+}
+
+.line8{ 
+    width: 65px;
+    top: 63px;
+    left: 5px;
+}
+
+.line9{
+    width: 80px;
+    top: 80px;
+}
+
+.line-concavity.line10{
+    top: 80px;
+    left: -70px;
+}
+
+.line-concavity.line11{
+    top: 80px;
+    left: 45px;
+}
+
+.line12{
+    width: 47px;
+    top: 95px;
+    left: 15px;
+}
+
+.line13{
+    left: 140px;
+    top: 28px;
+}
+
+.line14{
+    top: 45px;
+    left: 140px;
+}
+
+.line-concavity.line15{
+    top: 45px;
+    left: 65px;
+}
+
+.line16{
+    top: 60px;
+    left: 150px;
+}
+
+.line17{
+    width: 65px;
+    top: 95px;
+    left: 97px;
+}
+
+.line18{
+    top: 112px;
+    left: 97px;
+}
+
+.line-concavity.line19{
+    top: 112px;
+    left: 10px;
+}
+
+.line-concavity.line20{
+    top: 112px;
+    left: 145px;
+}
+
+.line21{
+    top: 129px;
+    left: 80px;
+}
+
+.line22{
+    top: 146px;
+    left:80px;
+}
+
+.line-concavity.line23{
+    top: 146px;
+    left: 0px;
+}
+
+.line-concavity.line24{
+    top: 146px;
+    left: 110px;
+}
+
+.line25{
+    width: 45px;
+    top: 163px;
+    left: 80px;
+}
+
+.line26{
+    width: 7px;
+    top: 39px;
+    left: 30px;
+}
+
+.line27{
+    width: 40px;
+    top: 39px;
+    left: 40px;
+}
+
+.line28{
+    top: 43px;
+    left: 30px;
+}
+
+.line-concavity.line29{
+    background-color: #00a551;
+    width: 40px;
+    top:43px;
+    left: 3px;
+}
+
+.line-concavity.line30{
+    top: 43px;
+    left: 67px;
+}
+
+.line31{
+    width: 70px;
+    top: 47px;
+    left: 25px;
+}
+
+.line32{
+    top: 51px;
+    left: 30px;
+}
+
+.line-concavity.line33{
+    background-color: #00a551;
+    width: 30px;
+    top:51px;
+    left: 25px;
+}
+
+.line-concavity.line34{
+    top: 51px;
+    left: 75px;
+}
+
+.line35{
+    width: 53px;
+    top: 55px;
+    left: 32px;
+}
+
+.line36{
+    width: 20px;
+    top: 76px;
+    left: 117px;
+}
+
+.line37{
+    width: 7px;
+    top: 76px;
+    left: 143px;
+}
+
+.line38{
+    top: 80px;
+    width: 50px;
+    left: 100px;
+}
+
+.line-concavity.line39{
+    width: 40px;
+    top: 80px;
+    left: 83px;
+}
+
+.line-concavity.line40{
+    width: 40px;
+    top: 80px;
+    left: 133px;
+}
+
+.line41{
+    top: 84px;
+    width: 45px;
+    left: 110px;
+}
+
+.line42{
+    top: 88px;
+    width: 50px;
+    left: 110px;
+}
+
+.line-concavity.line43{
+    top: 88px;
+    width: 50px;
+    left: 87px;
+}
+
+.line-concavity.line44{
+    top: 88px;
+    width: 50px;
+    left: 150px;
+}
+
+.line45{
+    top: 92px;
+    left: 97px;
+}
+
+.planet-description{
+    height: 463px;
+    width: 630px;
+    margin-top: 17px;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    padding-left: 83px;
+}
+
+.planet-description h1 {
+    margin-bottom: 45px;
+}
+
+.planet-description p{
+    font-size: 30px;
+}
