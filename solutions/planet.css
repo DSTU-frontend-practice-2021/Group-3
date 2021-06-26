@@ -33,7 +33,6 @@ body{
     border-radius: 50%;
     background: #1b75bb;
     margin: auto;
-    /*box-shadow: inset -18px -35px 0px -12px rgba(0, 0, 0, 0.5), inset -35px -75px 0px -15px rgba(0, 0, 0, 0.3);*/ 
     overflow: hidden;
     position: relative;
 }
@@ -358,6 +357,73 @@ body{
 .line45{
     top: 92px;
     left: 97px;
+    width: 77px;
+}
+
+.line46{
+    width: 7px;
+    top: 132px;
+    left: 17px;
+}
+
+.line47{
+    top: 132px;
+    width: 30px;
+    left: 27px;
+}
+
+.line48{
+    top: 136px;
+    width: 50px;
+    left: 20px;
+}
+
+.line-concavity.line49{
+    top: 136px;
+    width: 30px;
+    left: 13px;
+}
+
+.line-concavity.line50{
+    top: 136px;
+    width: 30px;
+    left: 52px;
+}
+
+.line51{
+    width: 43px;
+    top: 140px;
+    left: 22px;
+}
+
+.line52{
+    top: 144px;
+    width: 50px;
+    left: 10px;
+}
+
+.line-concavity.line53{
+    top: 144px;
+    width: 30px;
+    left: 2px;
+}
+
+.line-concavity.line54{
+    top: 144px;
+    width: 30px;
+    left: 42px;
+}
+
+.line55{
+    top: 148px;
+    width: 23px;
+    left: 28px;
+}
+
+.line56{
+    top: 148px;
+    width: 15px;
+    left: 55px;
 }
 
 .planet-description{
