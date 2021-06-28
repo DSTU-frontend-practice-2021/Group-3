@@ -1,0 +1,66 @@
+.st0{fill:#F7931E;}
+    
+.st1{fill:#F7931E;stroke:#F7931E;stroke-miterlimit:10;}
+    
+.st2{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+  
+.st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+
+.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
+
+#_x3C_square_x3E_{
+      animation-name:pulsing;
+      animation-iteration-count:infinite;
+      animation-duration:5s;
+    }
+    #_x3C_ellipse_x3E_{
+      animation-name:rotate;
+      animation-iteration-count:infinite;
+      animation-duration:5s;
+    }
+    #_x3C_shadow_konus_x3E_ ellipse{
+      animation-name:rotate;
+      animation-iteration-count:infinite;
+      animation-duration:5s;
+    }
+    
+    @keyframes rotate{
+      0% {
+        transform: slidein(0deg);
+      }
+      50% {
+        transform: rotate(-5deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    @-webkit-keyframes pulsing {
+      0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5)
+      }
+      50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+      }
+      100% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+      }
+    }
+    
+    @keyframes pulsing {
+      0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5)
+      }
+      50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+      }
+      100% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+      }
+    }
