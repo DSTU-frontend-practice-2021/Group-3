@@ -4,10 +4,12 @@
     height: 15vw;
     background: navy;
     border-radius: 50vw;
-    margin-left: 45vw;
+    margin-left: 41.5vw;
     margin-top: 15vw;
     z-index: 9;
     transition: 0.6s linear; 
+    display: flex;
+    justify-content: center;
 }
 
 .circle:hover{
@@ -39,7 +41,7 @@
 .text{
     position: absolute;
     top: 22.5vw;
-    left: 49vw;
+    left: 45.5vw;
     color:aliceblue;
     font-size: 1vw;
     z-index: 10;
@@ -61,5 +63,11 @@
     font-size: 3vw;
     z-index: 9;
     
+}
 
+body{
+    background-color: #c7c8c9;
+    overflow: hidden;
+    overflow-x:hidden;
+    
 }
