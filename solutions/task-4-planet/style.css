@@ -1,0 +1,318 @@
+/*Импорт шрифта*/
+@font-face
+{
+  font-family: "News Gothic No.2 W01 Thin";
+  src: url(font-face.ttf);
+}
+
+/*Прописывание анимации мерцания звезд*/
+@keyframes blinking-star
+{ 
+  from, to {transform: scale(1)}
+  50% {transform: scale(2)}
+}
+
+/*Прописывание анимации вращения планеты*/
+@keyframes spinning-planet
+{
+  from {left: -24em;}
+  to {left: 22em;}
+}
+
+
+/*----------------*/
+
+
+body > div
+{position: absolute;}
+
+
+/*----------------*/
+
+
+.content /*Текст с заголовком*/
+{
+  top: max(calc(40vh - 8vw), min(11.4vw, 30vh));
+  left: calc(min(35vw, 85vh) * 1.3);
+  width: 16em;
+  font-size: min(3vw, 8vh);
+  font-family: "News Gothic No.2 W01 Thin", sans-serif;
+}
+.content .title /*Заголовок*/
+{
+  position: absolute;
+  top: -2em;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+}
+
+
+/*----------------*/
+
+
+/*Область с космосом*/
+.space
+{
+  font-size: min(1vw, 2.43vh);
+  /*Настройка величины em для дочерних элементов (для адаптивности)*/
+
+  top: max(calc(40vh - 17.5em), 4vh);
+  left: 4em;
+  width: 35em;
+  height: 35em;
+  border-radius: 3em;
+  background-color: #231f20;
+}
+
+
+/*Общие свойства звёзд*/
+.stars
+{
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+}
+/*Активация анимации мерцания звёзд*/
+.star-1,.star-3
+{animation: blinking-star 2s infinite ease-in-out;}
+.star-2,.star-4
+{animation: blinking-star 2s -0.5s infinite ease-in-out;}
+.star-5,.star-6
+{animation: blinking-star 2s -1.5s infinite ease-in-out;}
+/*Размеры звёзд*/
+.star-2,.star-3,.star-4
+{width: 0.6em; height: 0.6em;}
+.star-1,.star-5,.star-6
+{width: 1em; height: 1em;}
+/*Размещение звёзд*/
+.star-1
+{top: 5em; left: 5em;}
+.star-2
+{top: 29em; left: 12em;}
+.star-3
+{top: 8em; left: 28em;}
+.star-4
+{top: 4em; left: 18em;}
+.star-5
+{top: 15em; left: 2em;}
+.star-6
+{top: 30em; left: 30em;}
+
+
+/*Земля*/
+.earth
+{
+  position: relative;
+  margin: auto;
+  top: 7.5em; /*(35-20)/2*/
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  background-color: #1b75bb;
+  overflow: hidden;
+}
+
+/*Тень*/
+.earth::after
+{
+  z-index: 3;
+  position: absolute;
+  content: "";
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  box-shadow:
+  inset -2em -3em 0 0 rgba(0,0,0,0.4),
+  inset -4em -6em 0 0 rgba(0,0,0,0.2);
+}
+
+
+/*Активация анимации вращения планеты*/
+.land-1
+{position: absolute; animation: spinning-planet 40s infinite linear;}
+.land-2
+{position: absolute; animation: spinning-planet 40s -15s infinite linear;}
+.clouds-1
+{position: absolute; animation: spinning-planet 15s -10s infinite linear;}
+.clouds-2
+{position: absolute; animation: spinning-planet 15s -2.5s infinite linear;}
+
+
+
+/*Общие свойства для элементов планеты*/
+.parts
+{position: absolute; border-radius: 2em;}
+.left-1, .left-2
+{transform: rotate(180deg);}
+.type-4::before
+{
+  position: absolute;
+  content: "";
+  border-radius: 3em;
+}
+
+
+
+/*Общие свойства для элементов суши*/
+.land .parts
+{background-color:#00a551}
+/*Типы элементов суши*/
+.land .type-1
+{width: 10em; height: 3em;}
+.land .type-2
+{width: 4em; height: 10em;}
+.land .type-3
+{width: 5em; height: 2em;}
+.land .type-4::before
+/*Реализация дуги для создания внутренних скруглений*/
+{
+  width: 5em; height: 1.7em;
+  border: 1.5em solid #00a551;
+  clip:rect(0,2em,12em,0);
+}
+
+
+  /*Размещение суши №1*/
+.land-1 .type-1
+{
+  top: 2em; left: 1.3em;
+  box-shadow:
+    -2em 4.6em #00a551,
+    -1em 9.2em #00a551,
+    13em 12em #00a551;
+}
+.land-1 .type-2
+{ top: 2em; left: 3em; }
+.land-1 .type-3
+{
+  top: 10.7em; left: 15.5em;
+  box-shadow:
+    0em -7em 0 0.5em #00a551,
+    -0.6em -11.4em 0 0.5em #00a551;
+}
+/*Правые внутренние скругления (4-ый тип суши)*/
+.land-1 .right-1
+{ top: 3.45em; left: 6em;
+  filter: drop-shadow(0 4.6em 0 #00a551); }
+.land-1 .right-2
+{ top: 11em; left: 17em;
+  filter: drop-shadow(0.5em -10.8em 0 #00a551); }
+/*Левые внутренние скругления (4-ый тип суши)*/
+.land-1 .left-1
+{ top: 12.7em; left: 3.5em;
+  filter: drop-shadow(-0.9em 4.7em 0 #00a551); }
+.land-1 .left-2
+{ top: 15.8em; left: 18em;
+  filter: drop-shadow(0 11em 0 #00a551); }
+
+
+  /*Размещение суши №2*/
+.land-2 .type-1
+{ top: 4em; left: 13em; }
+.land-2 .type-3
+{
+  top: 8.5em; left: 12.2em;
+  height: 3em;
+  box-shadow:
+    -1em -4.5em #00a551,
+    5.5em -0.1em #00a551,
+    -2em 0 #00a551;
+}
+.land-2 .right-1
+{ top: 5.5em; left: 14.4em; }
+.land-2 .right-2
+{ top: 5.4em; left: 19.9em; }
+.land-2 .left-1
+{ top: 10.1em; left: 15em; }
+.land-2 .left-2
+{ top: 10.1em; left: 20.5em; }
+
+
+
+/*Общие свойства для элементов облаков*/
+.clouds .parts
+{z-index: 2; background-color:#e6e7e8}
+.clouds .type-1
+{width: 10em; height: 1em;}
+.clouds .type-2
+{width: 4em; height: 1em;}
+.clouds .type-3
+{width: 1.5em; height: 1em;}
+.clouds .type-4::before
+{
+  width: 5em; height: 0.85em;
+  border: 0.8em solid #e6e7e8;
+  clip:rect(0,1em,3em,0);
+}
+
+
+  /*Размещение облаков №1*/
+.clouds-1 .type-1
+{
+  top: 4em; left: 3em;
+  box-shadow:
+    -2em 1.8em #e6e7e8,
+    6em 6em #e6e7e8;
+}
+.clouds-1 .type-2
+{
+  top: 4.9em; left: 5em;
+  box-shadow:
+    2em 12em #e6e7e8,
+    -2em 8em #e6e7e8,
+    8em 6em #e6e7e8,
+    6em 6.7em #e6e7e8,
+    9em 6.7em #e6e7e8;
+}
+.clouds-1 .type-3
+{
+  top: 4em; left: 14em;
+  box-shadow:
+    -16em -2em #e6e7e8,
+    3em -3em #e6e7e8,
+    -5em 7.7em #e6e7e8;
+}
+.clouds-1 .right-1
+{top: 4.2em; left: 8.5em;}
+.clouds-1 .right-2
+{top: 10.1em; left: 16.7em;}
+.clouds-1 .left-1
+{top: 6.6em; left: 5.7em;}
+.clouds-1 .left-2
+{top: 12.5em; left: 13.7em;}
+
+
+  /*Размещение облаков №2*/
+.clouds-2 .type-1
+{
+  top: 6em; left: 3em;
+  box-shadow: 8em 7em #e6e7e8;
+}
+.clouds-2 .type-2
+{
+  top: 13.8em; left: 13em;
+  box-shadow:
+    -16em -11em #e6e7e8,
+    5em -5em #e6e7e8,
+    -8em -9.7em #e6e7e8,
+    -7em -6em #e6e7e8,
+    -1em 0.9em #e6e7e8,
+    2em 0.9em #e6e7e8;
+}
+.clouds-2 .type-3
+{
+  top: 4.1em; left: 10em;
+  box-shadow:
+    -10em 14em #e6e7e8,
+    3em 6em #e6e7e8,
+    -5em 7.7em #e6e7e8;
+}
+.clouds-2 .right-1
+{ top: 6.2em; left: 7.3em; }
+.clouds-2 .right-2
+{ top: 13.1em; left: 16.5em; }
+.clouds-2 .left-1
+{ top: 8.6em; left: 7.7em; }
+.clouds-2 .left-2
+{ top: 15.5em; left: 13.6em; }
