@@ -1,0 +1,70 @@
+.background {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    height: 650px;
+    width: 1700px;
+}
+
+.circle {
+    width: 720px;
+    height: 100%;
+}
+
+.circle_right {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(21, 21, 21, 0);
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    left: 65%;
+    top: 15%;
+}
+
+.circle_left {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(21, 21, 21, 0);
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    left: 33%;
+    top: 15%;
+}
+
+.circle_middle {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(194, 215, 198);
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: -32%;
+}
+
+.number {
+    color: rgb(230, 230, 230);
+    font-size: 40px;
+    margin-left: 260px;
+    margin-top: 60px;
+    font-family: 'Courier New';
+}
+
+.text {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 560px;
+    font-family: 'Courier New';
+}
+
+.text h1 {
+    font-size: 60px;
+    color: rgb(230, 230, 230);
+    font-weight: 100;
+}
+
+.text p {
+    font-size: 20px;
+    color: rgb(209, 209, 209);
+    line-height: 2;
+}
