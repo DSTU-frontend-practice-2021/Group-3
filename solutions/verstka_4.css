@@ -30,14 +30,16 @@
 }
 
 /* Тень на Земле */
+.shadow_1, .shadow_2 {
+    position: absolute;
+    z-index: 2;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
 .shadow_1{
-  position: absolute;
-  z-index: 2;
-  box-sizing: border-box;
   width: 300px;
   height: 300px;
   border: 30px solid #003258;
-  border-radius: 50%;
   top: 50px;
   right: 90px;
   clip: rect(120px, 260px, auto, auto);
@@ -45,13 +47,9 @@
   
 }
 .shadow_2{
-  position: absolute;
-  z-index: 2;
-  box-sizing: border-box;
   width: 360px;
   height: 360px;
   border: 30px solid #000000;
-  border-radius: 50%;
   top: 20px;
   right: 60px;
   clip: rect(190px, 260px, auto, auto); 
@@ -62,36 +60,13 @@
 .planet{
     width: 250px;
     height: 250px;
-    border-radius: 200px;
+    background-color: #1165a6;
+    border-radius: 50%;
     top: 125px;
     left: 135px;
     position: absolute;
     overflow: hidden;
     z-index: 1;
-}
-.fill_1{
-    width: 300px;
-    height: 300px;
-    background-color: #1165a6;
-    border-radius: 200px;
-    top: -80px;
-    left: -50px;
-    position: absolute;
-}
-.fill_2{
-    width: 250px;
-    height: 250px;
-    background-color: #1165a6;
-    border-radius: 200px;
-}
-.fill_3{
-    width: 250px;
-    height: 250px;
-    border-radius: 200px;
-    background-color: #1165a6;
-    top: -70px;
-    left: -30px;
-    position: absolute;
 }
 
 /* 1-й континент */
@@ -102,10 +77,9 @@
     width: 60px;
     height: 185px;
     background-color: #00a551;
-    z-index: 1000;
+    z-index: 10;
 }
 .land_1{ 
-    content: "";
     position: absolute;
     width: 120px;
     height: 40px;
@@ -115,7 +89,6 @@
     border-radius: 50px 0;
 }
 .land_2{
-    content: "";
     position: absolute;
     width: 140px;
     height: 30px;
@@ -126,7 +99,6 @@
 }
 
 .land_3{
-    content: "";
     position: absolute;
     width: 80px;
     height: 30px;
@@ -152,12 +124,11 @@
     top: 40px;
     left: 45px;
     border-radius: 40%;
-    z-index: 10001;
+    z-index: 100;
 }
 .rcover_2{
     position: absolute;
     width: 40px;
-    content: "";
     height: 30px;
     background-color: #1165a6;
     top: 55px;
@@ -168,7 +139,6 @@
 .rcover_3{
     position: absolute;
     width: 35px;
-    content: "";
     height: 30px;
     background-color: #1165a6;
     top: 115px;
@@ -184,12 +154,11 @@
     top: 40px;
     left: -23px;
     border-radius: 40%;
-    z-index: 10001;
+    z-index: 100;
 }
 .lcover_2{
     position: absolute;
     width: 30px;
-    content: "";
     height: 30px;
     background-color: #1165a6;
     top: 55px;
@@ -200,7 +169,6 @@
 .lcover_3{
     position: absolute;
     width: 35px;
-    content: "";
     height: 30px;
     background-color: #1165a6;
     top: 115px;
@@ -216,11 +184,10 @@
     width: 50px;
     height: 60px;
     background-color: #00a551;
-    z-index: 1000;
+    z-index: 50;
 }
 .land_1-1{
     position: absolute;
-    content: "";
     background-color: #00a551;
     top: -15px;
     left: -18px;
@@ -230,7 +197,6 @@
 }
 .land_2-1{
     position: absolute;
-    content: "";
     background-color: #00a551;
     top: 45px;
     left: -40px;
@@ -247,18 +213,17 @@
     top: 15px;
     left: 38px;
     border-radius: 40%;
-    z-index: 10001;
+    z-index: 100;
 }
 .rcover_21{
     position: absolute;
-    content: "";
     width: 35px;
     height: 30px;
     background-color: #1165a6;
     top: 60px;
     left: -40px;
     border-radius: 40%;
-    z-index: 10001;
+    z-index: 100;
 }
 .lcover_11{ 
     position: absolute;
@@ -268,12 +233,11 @@
     top: 15px;
     left: -28px;
     border-radius: 30px;
-    z-index: 10001;
+    z-index: 100;
 }
 .lcover_21{
     position: absolute;
     width: 35px;
-    content: "";
     height: 30px;
     background-color: #1165a6;
     top: 59px;
@@ -287,7 +251,7 @@
     left: -55px;
     top: 104px;
     background-color: #00a551;
-    z-index: 10000;
+    z-index: 99;
     border-radius: 20px;
 }
 .center_cover_21{ 
@@ -297,8 +261,7 @@
     left: 25px;
     width: 40px;
     height: 40px;
-    content: "";
-    z-index:1001;
+    z-index:50;
 }
 
 /* 3-й континент */
@@ -309,7 +272,7 @@
     width: 60px;
     height: 185px;
     background-color: rgb(45, 177, 45);
-    z-index: 1000;
+    z-index: 100;
 }
 
 /* 1-е облако */
@@ -320,7 +283,7 @@
     border-radius: 30px;
     width: 90px;
     height: 5px;
-    z-index: 10002;
+    z-index: 101;
     background-color: #e7e8e9;
 }
 .cloud_1::before{
@@ -351,7 +314,7 @@
     border-radius: 30px;
     width: 50px;
     height: 15px;
-    z-index: 10002;
+    z-index: 101;
     background-color: #e7e8e9;
 }
 .vert_cloud_1::before{
@@ -375,7 +338,7 @@
 }
 .cloud_lcover_1{
     position: absolute;
-    z-index: 10002;
+    z-index: 101;
     top: 5px;
     left: 15px;
     background-color: #00a551;
@@ -395,7 +358,7 @@
 }
 .cloud_rcover_1{
     position: absolute;
-    z-index: 10002;
+    z-index: 101;
     top: 5px;
     left: 61px;
     background-color: #00a551;
@@ -422,7 +385,7 @@
     border-radius: 30px;
     width: 50px;
     height: 5px;
-    z-index: 10002;
+    z-index: 101;
     background-color: #e7e8e9;
 }
 .cloud_2::before{
@@ -452,7 +415,7 @@
     border-radius: 30px;
     width: 20px;
     height: 15px;
-    z-index: 10002;
+    z-index: 101;
     background-color: #e7e8e9;
 }
 .vert_cloud_2::before{
@@ -476,7 +439,7 @@
 } 
 .cloud_lcover_2{
     position: absolute;
-    z-index: 10002;
+    z-index: 101;
     top: 5px;
     left: 15px;
     background-color: #1165a6;
@@ -496,7 +459,7 @@
 }
 .cloud_rcover_2{
     position: absolute;
-    z-index: 10002;
+    z-index: 101;
     top: 5px;
     left: 38px;
     background-color: #1165a6;
@@ -523,7 +486,7 @@
     border-radius: 30px;
     width: 50px;
     height: 5px;
-    z-index: 10002;
+    z-index: 1001;
     background-color: #e7e8e9;
 }
 .cloud_3::before{
@@ -553,7 +516,7 @@
     border-radius: 30px;
     width: 20px;
     height: 15px;
-    z-index: 10002;
+    z-index: 101;
     background-color: #e7e8e9;
 }
 .vert_cloud_3::before{
@@ -577,7 +540,7 @@
 } 
 .cloud_lcover_3{
     position: absolute;
-    z-index: 10002;
+    z-index: 101;
     top: 5px;
     left: 15px;
     background-color: #00a551;
@@ -597,7 +560,7 @@
 }
 .cloud_rcover_3{
     position: absolute;
-    z-index: 10002;
+    z-index: 101;
     top: 5px;
     left: 38px;
     background-color: #00a551;
@@ -630,8 +593,8 @@
     animation-iteration-count: infinite;
 }
 .stars_2{
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     top: 50px;
     left: 420px;
     position: absolute;
@@ -643,8 +606,8 @@
 }
 
 .stars_3{
-    width: 10px; 
-    height: 10px;
+    width: 13px; 
+    height: 13px;
     top: 430px;
     left: 40px;
     background-color: white;
@@ -656,8 +619,8 @@
 }
 
 .stars_4{
-    width: 5px; 
-    height: 5px;
+    width: 8px; 
+    height: 8px;
     top: 400px;
     opacity: 40%;
     left: 170px;
@@ -670,8 +633,8 @@
 
 }
 .stars_5{
-    width: 7px; 
-    height: 7px;
+    width: 10px; 
+    height: 10px;
     top: 100px;
     opacity: 40%;
     left: 150px;
@@ -684,8 +647,8 @@
 }
 
 .stars_6{
-    width: 10px; 
-    height: 10px;
+    width: 13px; 
+    height: 13px;
     top: 300px;
     opacity: 40%;
     left: 490px;
