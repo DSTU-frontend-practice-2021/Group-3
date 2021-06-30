@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>1</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="circle">mkis12</div>
+			<div class="first">
+				<p>
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em>
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+					<em><b>аюка</b></em> 
+				</p>
+			</div>
+			<div class="second">
+				<p>
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+					<em><b>басангов</b></em> 
+          </p>
+			</div>
+		</div>
+	</body>
+</html> 
