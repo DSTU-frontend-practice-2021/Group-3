@@ -1,13 +1,9 @@
-html,body{
-	height:100%;
-}
-
 .line1{
 	position:absolute;
-	top:330px;
+	top:42%;
 	transform:rotate(15deg);
-	font-size:80px;
-	line-height:100px;
+	font-size:10vh;
+	line-height:10,5vh;
 	background-color:#A2B3B1;
 	width:100%;
 	text-align:center;
@@ -15,10 +11,10 @@ html,body{
 
 .line2{
 	position:absolute;
-	top:330px;	
+	top:42%;
 	transform:rotate(-15deg);
-	font-size:80px;
-	line-height:100px;
+	font-size:10vh;
+	line-height:10,5vh;
 	background-color:#73A4EC;
 	width:100%;
 	text-align:center;
@@ -26,25 +22,25 @@ html,body{
 }
 .circle{
 	position:absolute;
-	top:300px;
-	left:700px;
-	width: 150px;
-	height: 150px;
+	top:39%;
+	left:45%;
+	width: 10%;
+	height: 18%;
 	border-radius: 50%;
 	background-color:#0592FF;
+	transition:3s;
 }
 
 .text{
-	position:absolute;
-	top:55px;
-	left:30px;
-	text-align:center;
-	font-size:30px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size:5vh;
 	color:#05FF90;
 }
 
 .circle:hover{
-	transition: 3s;
 	transform:scale(0.5);
 	background-color:#6200FF;
 }
