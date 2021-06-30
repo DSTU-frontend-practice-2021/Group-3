@@ -1,8 +1,7 @@
 function list(names){
     let arrLen = names.length;
     let arr = [];
-    let i = 0;
-    while (i<arrLen){
+    for (let i = 0; i < arrLen; i++){
       if (i == arrLen-1) {
         if (arrLen ==1){
           arr.push(names[i].name);
