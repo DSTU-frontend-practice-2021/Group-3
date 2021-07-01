@@ -22,5 +22,6 @@ function to_nato(words) {
       arr.push(NATO[char]);
     }
   }
-  return arr.join(' ')
+  return arr.join(' ');
 }
+//почему-то на кодварсе не проходит тернарный оператор, ругается на синтаксис :(
