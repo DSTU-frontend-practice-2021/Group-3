@@ -10,7 +10,7 @@
     height: 100%;
 }
 
-.circleDefault {
+.circle-default {
     position: relative;
     background-color: rgba(21, 21, 21, 0);
     border: 2px solid white;
@@ -19,29 +19,21 @@
     width: 200px;
 }
 
-.circle_right {
+.circle-right {
     left: 65%;
     top: 15%;
 }
 
-.circle_left {
+.circle-left {
     left: 33%;
     top: 15%;
 }
 
-.circle_middle {
+.circle-middle {
     left: 50%;
     top: -32%;
     background-color: rgb(194, 215, 198);
     border: 0px;
-}
-
-.number {
-    color: rgb(230, 230, 230);
-    font-size: 40px;
-    margin-left: 260px;
-    margin-top: 60px;
-    font-family: 'Courier New';
 }
 
 .text {
@@ -55,6 +47,15 @@
     font-size: 60px;
     color: rgb(230, 230, 230);
     font-weight: 100;
+}
+
+.text n {
+    position: relative;
+    color: rgb(230, 230, 230);
+    font-size: 40px;
+    left: -50px;
+    top: 50px;
+    font-family: 'Courier New';
 }
 
 .text p {
