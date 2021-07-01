@@ -1,0 +1,78 @@
+.shadow{
+    fill:#F7931E;
+    
+}
+.obj{
+  fill:none;
+  stroke:black;
+  stroke-width: 5px;
+}
+
+#square{
+    animation-name:pulsing;
+    animation-iteration-count:infinite;
+    animation-duration:5s;
+  }
+.konus {
+    animation-name:rotate;
+    animation-iteration-count:infinite;
+    animation-duration:5s;
+  }
+#crackline{
+  animation-name:running;
+  animation-duration: 10s;
+}
+  
+  
+  @keyframes rotate{
+    0% {
+      transform: slidein(0deg);
+    }
+    50% {
+      transform: rotate(-25deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+  
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+  @keyframes running {
+    0%   { transform: translateX(0) ; }
+    15%{transform:translateX(500px) scale(1.2,.8) translateY(100px);}
+    30%{transform:translateX(1000px) scale(.8,1.2)translateY(-75px);}
+    45%{transform:translateX(1500px) scale(1.2,.8) translateY(100px);}
+    50%{transform: translateX(2000px) scale(.8,1.2)translateY(-75px); }
+    50.1%{transform: translateX(-450px) scale(1.2,.8) translateY(100px); }
+    65%{transform:translateX(-390px) scale(.8,1.2) translateY(-75px);}
+    80%{transform:translateX(-250px) scale(1.2,.8) translateY(100px);}
+    90%{transform:translateX(-100px) scale(.8,1.2) translateY(-75px);}
+    99%{transform:translateX(-20px) scale(1.1,0.9) translateY(50px);}
+    100% { transform: translateX(0) scale(1,1); }}
