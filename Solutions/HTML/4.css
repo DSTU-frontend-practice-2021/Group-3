@@ -49,64 +49,52 @@ h2 {
     background: #1165a6;
 }
 
-#Ellipse2 {
+.EllipseDefault {
     position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.Ellipse2 {
     width: 15px;
     height: 15px;
     left: 225px;
     top: 153px;
-    border-radius: 50%;
-    background: #FFFFFF;
 }
 
-#Ellipse3 {
-    position: absolute;
+.Ellipse3 {
     width: 15px;
     height: 15px;
     left: 263px;
     top: 277px;
-    background: #FFFFFF;
-    border-radius: 50%;
 }
 
-#Ellipse4 {
-    position: absolute;
+.Ellipse4 {
     width: 10px;
     height: 10px;
     left: 191px;
     top: 519px;
-    background: #FFFFFF;
-    border-radius: 50%;
 }
 
-#Ellipse5 {
-    position: absolute;
+.Ellipse5 {
     width: 13px;
     height: 13px;
     left: 573px;
     top: 344px;
-    background: #FFFFFF;
-    border-radius: 50%;
 }
 
-#Ellipse6 {
-    position: absolute;
+.Ellipse6 {
     width: 10px;
     height: 10px;
     left: 639px;
     top: 380px;
-    background: #FFFFFF;
-    border-radius: 50%;
 }
 
-#Ellipse7 {
-    position: absolute;
+.Ellipse7 {
     width: 25px;
     height: 25px;
     left: 464px;
     top: 553px;
-    background: #FFFFFF;
-    border-radius: 50%;
 }
 
 #Vector1 {

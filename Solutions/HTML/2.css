@@ -10,36 +10,30 @@
     height: 100%;
 }
 
-.circle_right {
+.circleDefault {
+    position: relative;
+    background-color: rgba(21, 21, 21, 0);
+    border: 2px solid white;
+    border-radius: 50%;
     height: 200px;
     width: 200px;
-    background-color: rgba(21, 21, 21, 0);
-    border-radius: 50%;
-    border: 2px solid white;
-    position: relative;
+}
+
+.circle_right {
     left: 65%;
     top: 15%;
 }
 
 .circle_left {
-    height: 200px;
-    width: 200px;
-    background-color: rgba(21, 21, 21, 0);
-    border-radius: 50%;
-    border: 2px solid white;
-    position: relative;
     left: 33%;
     top: 15%;
 }
 
 .circle_middle {
-    height: 200px;
-    width: 200px;
-    background-color: rgb(194, 215, 198);
-    border-radius: 50%;
-    position: relative;
     left: 50%;
     top: -32%;
+    background-color: rgb(194, 215, 198);
+    border: 0px;
 }
 
 .number {
