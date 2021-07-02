@@ -1,0 +1,46 @@
+.line1{
+	position:absolute;
+	top:42%;
+	transform:rotate(15deg);
+	font-size:10vh;
+	line-height:10,5vh;
+	background-color:#A2B3B1;
+	width:100%;
+	text-align:center;
+}
+
+.line2{
+	position:absolute;
+	top:42%;
+	transform:rotate(-15deg);
+	font-size:10vh;
+	line-height:10,5vh;
+	background-color:#73A4EC;
+	width:100%;
+	text-align:center;
+	color:#BA8888;	
+}
+.circle{
+	position:absolute;
+	top:39%;
+	left:45%;
+	width: 10%;
+	height: 18%;
+	border-radius: 50%;
+	background-color:#0592FF;
+	transition:3s;
+}
+
+.text{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size:5vh;
+	color:#05FF90;
+}
+
+.circle:hover{
+	transform:scale(0.5);
+	background-color:#6200FF;
+}
