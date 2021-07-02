@@ -1,0 +1,65 @@
+.background {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    height: 650px;
+    width: 1700px;
+}
+
+.circle {
+    width: 720px;
+    height: 100%;
+}
+
+.circle-default {
+    position: relative;
+    background-color: rgba(21, 21, 21, 0);
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.circle-right {
+    left: 65%;
+    top: 15%;
+}
+
+.circle-left {
+    left: 33%;
+    top: 15%;
+}
+
+.circle-middle {
+    left: 50%;
+    top: -32%;
+    background-color: rgb(194, 215, 198);
+    border: 0px;
+}
+
+.text {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 560px;
+    font-family: 'Courier New';
+}
+
+.text h1 {
+    font-size: 60px;
+    color: rgb(230, 230, 230);
+    font-weight: 100;
+}
+
+.text n {
+    position: relative;
+    color: rgb(230, 230, 230);
+    font-size: 40px;
+    left: -50px;
+    top: 50px;
+    font-family: 'Courier New';
+}
+
+.text p {
+    font-size: 20px;
+    color: rgb(209, 209, 209);
+    line-height: 2;
+}

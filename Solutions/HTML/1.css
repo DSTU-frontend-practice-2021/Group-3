@@ -1,0 +1,56 @@
+body {
+    overflow: hidden;
+    position: relative;
+    background: #F1F1F1;
+}
+
+#rectangle1 {
+    position: absolute;
+    width: 1904px;
+    height: 954px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sim {
+    margin: auto;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 162px;
+    line-height: 197px;
+    position: absolute;
+    width: 2450px;
+    height: 180px;
+}
+
+.rectangle2 {
+    color: #2E54B7;
+    position: relative;
+    left: -287.18px;
+    top: 365.37px;
+    background: #E0E0E0;
+    transform: rotate(8deg);
+}
+
+.rectangle3 {
+    color: #000000;
+    left: -212px;
+    top: 360.37px;
+    background: #FFFFFF;
+    transform: rotate(-7deg);
+}
+
+.circle {
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 50%;
+    line-height: 240px;
+    width: 236px;
+    height: 236px;
+    left: 835px;
+    top: 340px;
+    background: #2E54B7;
+}
