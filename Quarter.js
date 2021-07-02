@@ -1,0 +1,1 @@
+let quarterOf = month => Math.ceil(month / 3);
