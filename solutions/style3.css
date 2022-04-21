@@ -1,0 +1,53 @@
+body
+{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+div, div::before
+{
+position: absolute;
+width: 100px;
+height: 100px;
+}
+div::before
+{
+content: "";
+z-index: -1;
+background: yellow;
+border-color: yellow !important;
+margin: 15px;
+}
+
+
+.circle, .circle::before
+{
+border: 5px solid;
+border-radius: 50%;
+}
+.circle
+{margin: 100px 0 0 50px;}
+
+.dotsquare, .dotsquare::before
+{
+border: 7px dotted;
+}
+.dotsquare
+{margin: 350px 0 0 100px;}
+
+.rectangle, .rectangle::before
+{
+width: 200px;
+border: 7px solid;
+border-radius: 6px;
+}
+.rectangle
+{margin: 15px 0 0 325px}
+
+.square, .square::before
+{
+border: 7px solid;
+border-radius: 6px;
+}
+.square
+{margin: 250px 0 0 400px}
