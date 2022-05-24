@@ -1,0 +1,61 @@
+.circle{
+    position: absolute;
+    width: 15vw; 
+    height: 15vw;
+    background: blue;
+    border-radius: 50vw;
+    margin-left: 45vw;
+    margin-top: 15vw;
+    z-index: 9;
+    transition: 0.6s linear; 
+}
+
+.rectangle1{
+    position: absolute;
+    width: 300vw;
+    height: 6vw;
+    background: rgb(195, 190, 190);
+    transform:rotate(-10deg);
+    margin-top: 5vw;
+    margin-left: -15vw;
+    z-index: 8;
+}
+
+.rectangle2{
+    position: absolute;
+    width: 300vw;
+    height: 6vw;
+    background: gray;
+    transform:rotate(9deg);
+    margin-top: 33vw;
+    margin-left: -15vw;
+    z-index:7;
+}
+
+.text1{
+    position: absolute;
+    top: 22.5vw;
+    left: 49vw;
+    color:white;
+    font-size: 1vw;
+    z-index: 10;
+}
+
+.text2{
+    position: absolute;  
+    top: 21.5vw;
+    transform: rotate(9deg);
+    font-size: 3vw;
+    z-index: 8;
+    color: navy;
+}
+
+.text3{
+    position: absolute;  
+    top: 22vw;
+    transform: rotate(-10deg);
+    font-size: 3vw;
+    z-index: 9;
+
+
+}
